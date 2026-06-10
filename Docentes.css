@@ -1,0 +1,198 @@
+/* ===== ESTILOS GENERALES ===== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    background-color: #006633;
+    color: white;
+    padding: 20px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.foto-logo{
+    width: 100px;
+    height: 100px;
+}
+
+/* ===== MENÚ ===== */
+
+nav{
+    background-color: #004d26;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: #00a651;
+}
+
+/* ===== CONTENIDO ===== */
+
+main{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h2, h3, h4{
+    text-align: center;
+    color: #006633;
+    margin-top: 30px;
+}
+
+/* ===== COLUMNAS ===== */
+
+.columnas{
+    width: 45%;
+    float: left;
+    margin: 2%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ===== LIMPIAR FLOAT ===== */
+
+.limpiar{
+    clear: both;
+}
+
+/* ===== TEXTO NORMAL ===== */
+
+.normal{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-align: justify;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* ===== CONTENEDOR DE IMÁGENES ===== */
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ===== IMÁGENES ===== */
+
+.foto-izquierda,
+.foto-derecha{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    display: block;
+    margin: auto;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background-color: #006633;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer h2{
+    color: white;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box{
+    background-color: rgba(255,255,255,0.1);
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .columnas{
+        width: 90%;
+        float: none;
+        margin: 20px auto;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li a{
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .foto-logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .foto-izquierda,
+    .foto-derecha{
+        width: 90%;
+    }
+}
